@@ -1,0 +1,1 @@
+this is a small (25mm**2,) breakout for the max31855 thermocouple interface, with a footprint for the SOIC8 chip, all necessary decoupling capacitors, and the footprint for the PCC-SMP-K-5 thermocouple connector by Omega.
