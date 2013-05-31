@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -317,6 +317,25 @@ chip</description>
 <rectangle x1="7.926" y1="-0.254" x2="8.434" y2="0.254" layer="51"/>
 <rectangle x1="9.926" y1="-0.254" x2="10.434" y2="0.254" layer="51"/>
 </package>
+<package name="2512">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
+chip</description>
+<wire x1="-2.362" y1="1.473" x2="2.387" y2="1.473" width="0.1524" layer="51"/>
+<wire x1="-2.362" y1="-1.473" x2="2.387" y2="-1.473" width="0.1524" layer="51"/>
+<wire x1="-3.973" y1="1.983" x2="3.973" y2="1.983" width="0.0508" layer="39"/>
+<wire x1="3.973" y1="1.983" x2="3.973" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="3.973" y1="-1.983" x2="-3.973" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="-3.973" y1="-1.983" x2="-3.973" y2="1.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="1.473" x2="1.498" y2="1.473" width="0.1524" layer="21"/>
+<wire x1="-1.473" y1="-1.473" x2="1.498" y2="-1.473" width="0.1524" layer="21"/>
+<smd name="1" x="-2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
+<smd name="2" x="2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
+<text x="-2.667" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.667" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-3.2004" y1="-1.5494" x2="-2.3505" y2="1.5507" layer="51"/>
+<rectangle x1="2.3622" y1="-1.5494" x2="3.2121" y2="1.5507" layer="51"/>
+<rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MAX31855">
@@ -368,6 +387,16 @@ chip</description>
 <pin name="4" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="5" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="6" x="-2.54" y="-5.08" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+<symbol name="RESISTOR">
+<wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="2.54" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="96" font="vector">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -550,6 +579,107 @@ chip</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="RESISTOR" prefix="R" uservalue="yes">
+<description>&lt;p&gt;&lt;b&gt;Resistors&lt;/b&gt;&lt;/p&gt;
+&lt;b&gt;0402&lt;/b&gt; - 0402 Surface Mount Package
+&lt;ul&gt;
+&lt;li&gt;10.0K 1% 1/16W [Digikey: 311-10.0KLRTR-ND]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;0603&lt;/b&gt; - 0603 Surface Mount Package&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;0 Ohm 1/10 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;15 Ohm 1/10 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;33 Ohm 1/10 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;49.9 Ohm 1/10 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;100 Ohm 1/10 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;150 Ohm 1/10 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;240 Ohm 1/10 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;390 Ohm 1/10 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;560 Ohm 1/10 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;750 Ohm 1/10 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;1.0K Ohm 1/10 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;1.5K Ohm 1/10 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;2.0K Ohm 1/10 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;4.7K Ohm 1/10 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;10.0K Ohm 1/10 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;20.0K Ohm 1/10 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;33.0K Ohm 1/10 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;100.0K Ohm 1/10 Watt 1% Resistor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;0805&lt;/b&gt; - 0805 Surface Mount Package
+&lt;ul&gt;
+&lt;li&gt;0 Ohm 1/8 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;33 Ohm 1/8 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;100 Ohm 1/8 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;150 Ohm 1/8 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;200 Ohm 1/8 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;240 Ohm 1/8 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;330 Ohm 1/8 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;390 Ohm 1/8 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;470 Ohm 1/8 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;1.0K Ohm 1/8 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;1.5K Ohm 1/8 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;2.0K Ohm 1/8 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;4.7K Ohm 1/8 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;5.1K Ohm 1/8 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;5.6K Ohm 1/8 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;10.0K Ohm 1/8 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;22.0K Ohm 1/8 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;33.0K Ohm 1/8 Watt 1% Resistor&lt;/li&gt;
+&lt;li&gt;100K Ohm 1/8 Watt 1% Resistor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;1206&lt;/b&gt; - 1206 Surface Mount Package&lt;br&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0805" package="0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1206" package="1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0603" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0402" package="0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2512" package="2512">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -568,6 +698,7 @@ chip</description>
 <part name="C2" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="C3" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="10nF"/>
 <part name="JP1" library="nonolith" deviceset="HEADER-1X6" device="ROUND"/>
+<part name="DNI" library="nonolith" deviceset="RESISTOR" device="0603" value="DNI"/>
 </parts>
 <sheets>
 <sheet>
@@ -579,7 +710,8 @@ chip</description>
 <instance part="C1" gate="G$1" x="38.1" y="49.53"/>
 <instance part="C2" gate="G$1" x="46.99" y="49.53"/>
 <instance part="C3" gate="G$1" x="63.5" y="74.93"/>
-<instance part="JP1" gate="A" x="-7.62" y="76.2" rot="R180"/>
+<instance part="JP1" gate="A" x="-15.24" y="78.74" rot="R180"/>
+<instance part="DNI" gate="G$1" x="5.08" y="81.28" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -630,8 +762,8 @@ chip</description>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="1"/>
-<wire x1="-5.08" y1="68.58" x2="1.27" y2="68.58" width="0" layer="91"/>
-<label x="2.54" y="68.58" size="1.778" layer="95"/>
+<wire x1="-12.7" y1="71.12" x2="-6.35" y2="71.12" width="0" layer="91"/>
+<label x="-5.08" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -649,9 +781,9 @@ chip</description>
 <label x="46.99" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="1.27" y="71.12" size="1.778" layer="95"/>
+<label x="-6.35" y="73.66" size="1.778" layer="95"/>
 <pinref part="JP1" gate="A" pin="2"/>
-<wire x1="-5.08" y1="71.12" x2="1.27" y2="71.12" width="0" layer="91"/>
+<wire x1="-12.7" y1="73.66" x2="-6.35" y2="73.66" width="0" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="4"/>
@@ -671,9 +803,10 @@ chip</description>
 <wire x1="12.7" y1="83.82" x2="10.16" y2="83.82" width="0" layer="91"/>
 </segment>
 <segment>
-<label x="1.27" y="73.66" size="1.778" layer="95"/>
+<label x="-6.35" y="76.2" size="1.778" layer="95"/>
 <pinref part="JP1" gate="A" pin="3"/>
-<wire x1="-5.08" y1="73.66" x2="1.27" y2="73.66" width="0" layer="91"/>
+<pinref part="DNI" gate="G$1" pin="1"/>
+<wire x1="-12.7" y1="76.2" x2="5.08" y2="76.2" width="0" layer="91"/>
 </segment>
 </net>
 <net name="CS" class="0">
@@ -682,9 +815,9 @@ chip</description>
 <wire x1="12.7" y1="78.74" x2="10.16" y2="78.74" width="0" layer="91"/>
 </segment>
 <segment>
-<label x="1.27" y="81.28" size="1.778" layer="95"/>
+<label x="-6.35" y="83.82" size="1.778" layer="95"/>
 <pinref part="JP1" gate="A" pin="6"/>
-<wire x1="-5.08" y1="81.28" x2="0" y2="81.28" width="0" layer="91"/>
+<wire x1="-12.7" y1="83.82" x2="-7.62" y2="83.82" width="0" layer="91"/>
 </segment>
 </net>
 <net name="SO" class="0">
@@ -693,16 +826,21 @@ chip</description>
 <wire x1="12.7" y1="73.66" x2="10.16" y2="73.66" width="0" layer="91"/>
 </segment>
 <segment>
-<label x="1.27" y="76.2" size="1.778" layer="95"/>
+<label x="-6.35" y="78.74" size="1.778" layer="95"/>
 <pinref part="JP1" gate="A" pin="4"/>
-<wire x1="-5.08" y1="76.2" x2="0" y2="76.2" width="0" layer="91"/>
+<wire x1="-12.7" y1="78.74" x2="-7.62" y2="78.74" width="0" layer="91"/>
 </segment>
 </net>
 <net name="SI" class="0">
 <segment>
-<label x="1.27" y="78.74" size="1.778" layer="95"/>
+<label x="-6.35" y="81.28" size="1.778" layer="95"/>
 <pinref part="JP1" gate="A" pin="5"/>
-<wire x1="-5.08" y1="78.74" x2="1.27" y2="78.74" width="0" layer="91"/>
+<wire x1="-12.7" y1="81.28" x2="-7.62" y2="81.28" width="0" layer="91"/>
+<wire x1="-7.62" y1="81.28" x2="-6.35" y2="81.28" width="0" layer="91"/>
+<wire x1="-6.35" y1="81.28" x2="-2.54" y2="81.28" width="0" layer="91"/>
+<wire x1="-2.54" y1="81.28" x2="-2.54" y2="86.36" width="0" layer="91"/>
+<pinref part="DNI" gate="G$1" pin="2"/>
+<wire x1="-2.54" y1="86.36" x2="5.08" y2="86.36" width="0" layer="91"/>
 </segment>
 </net>
 </nets>
